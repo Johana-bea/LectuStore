@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    background: #fff;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.carrusel-container {
+    position: relative;
+}
+
+.carrusel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.carrusel::-webkit-scrollbar {
+    display: none;
+}
+
+.libro {
+    flex: 0 0 auto;
+    width: 180px;
+    position: relative;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+.libro:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.libro img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.libro-info {
+    margin-top: 10px;
+}
+
+.libro-info h4 {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.libro-info a {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.libro-info p {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.btn-comprar {
+    display: none;
+    margin-top: 8px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.libro:hover .btn-comprar {
+    display: block;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    color: #007bff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.izquierda {
+    left: 0;
+}
+
+.derecha {
+    right: 0;
+}
+.decor {
+    color: #d2a679;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+.dec{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dec h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5c4033;
+}
+
+
+.dec h5 {
+    font-size: 1.1rem;
+    color: #7b2e1d;
+    margin-bottom: 2rem;
+}

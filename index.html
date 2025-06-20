@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="CSS/principal/style.css">
+    <link rel="stylesheet" href="CSS/principal/style_novedad.css">
+    <link rel="stylesheet" href="CSS/principal/style_carrusels.css">
+    <script src="JS/scrip.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="nav-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
+            <div class="search-container">
+                <form class="search-bar">
+                    <input type="text" placeholder="¿Qué estás buscando?">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="icons">
+                <span title="Carrito"><i class="fas fa-shopping-cart"></i></span>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu" id="menu">
+            <li>
+                <a href="index.html">Libros</a>
+                <ul>
+                    <li><a href="#">Ficción</a></li>
+                    <li><a href="#">Bienestar</a></li>
+                    <li><a href="#">Ciencia y sociedad</a>
+                    <li><a href="#">Infatil y juvenil</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Más Vendidos</a></li>
+            <li><a href="#">Recomendados</a></li>
+            <li><a href="Editorial.html">Editorial</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.png" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="dec">
+        <h2>
+            <span class="decor">•••</span>
+            TODOS LOS LIBROS DE <strong>LECTUSTORE</strong>
+            <span class="decor">•••</span>
+        </h2>
+        <h5>Bienvenido/a a nuestra comunidad lectora. Aquí encontrarás tu próxima lectura.</h5>
+    </section>
+
+    <section class="nov">
+
+        <h3><strong>NOVEDADES</strong></h3>
+
+        <div class="nov-grid">
+            <a href="#.html" class="novedad">
+                <img src="img/N1.png" alt="Portada del libro El verano de Cervantes">
+                <p>El verano de Cervantes</p>
+            </a>
+            <a href="#.html" class="novedad">
+                <img src="img/N2.png" alt=" El libro prohibido">
+                <p>Anna Kadabra 16. El libro prohibido</p>
+            </a>
+            <a href="#.html" class="novedad">
+                <img src="img/N3.png" alt=" libro La espada fulgurante">
+                <p>La espada fulgurante</p>
+            </a>
+            <a href="#.html" class="novedad">
+                <img src="img/N4.png" alt="libro Ingrata patria">
+                <p>Ingrata patria</p>
+            </a>
+            <a href="#.html" class="novedad">
+                <img src="img/N5.png" alt="libro Los mensajes de la oscuridad">
+                <p>Los mensajes de la oscuridad (Serie Charlie Parker 22)</p>
+            </a>
+            <a href="#.html" class="novedad">
+                <img src="img/N6.png" alt=" libro Murdle">
+                <p>Murdle: Muchos más crímenes por resolver</p>
+            </a>
+        </div>
+
+        <a href="vendidos.html">
+            <button type="button" class="ver-mas"><strong>Ver más</strong></button>
+        </a>
+    </section>
+    <section class="dec">
+        <h2>
+            <span class="decor">•••</span>
+            <strong>TEMÁTICAS DESTACADAS</strong>
+            <span class="decor">•••</span>
+        </h2>
+    </section>
+
+    <div class="carrusel-container">
+        <button class="flecha izquierda" onclick="moverCarrusel(-1)">&#10094;</button>
+
+        <div class="carrusel" id="carrusel">
+            <div class="tarjeta">
+                <div class="tarjeta-top azul">🏛️</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Historia</strong></h3>
+                    <p>Desde Mesopotamia hasta el siglo XXI. Comprende el pasado para entender el presente.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-top naranja">🧸</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Infantil</strong></h3>
+                    <p>Los mejores libros para niños. Aprende y diviértete con Teo, Pocoyó, Frozen, etc.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-top azul">🔬</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Ciencia</strong></h3>
+                    <p>¿Qué leyes rigen el universo? Aprende sobre física, biología, cerebro y más.</p>
+                </div>
+            </div>
+
+
+            <div class="tarjeta">
+                <div class="tarjeta-top verde">🍴</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Cocina</strong></h3>
+                    <p>Descubre los mejores libros para cocinar y sacar al chef que llevas dentro.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-top rojo">🕵️</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong> Novela negra</strong></h3>
+                    <p>Sumérgete en clásicos y thrillers modernos. ¡Conviértete en detective por un rato!</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-top naranja">🐉</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Juvenil</strong></h3>
+                    <p>Fantasía, misterio y romance. Una gran variedad para jóvenes lectores.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-top rojo">❤️</div>
+                <div class="tarjeta-contenido">
+                    <h3> <Strong>Novela romántica</Strong> </h3>
+                    <p>Descubre las historias de amor más apasionantes y conmovedoras.</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-top azul">📰</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Actualidad</strong></h3>
+                    <p>Todo lo que pasa a tu alrededor: política, sociedad, cultura y actualidad global.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-top verde">💬</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Autoayuda</strong> </h3>
+                    <p>Reflexiones, consejos y crecimiento personal para mejorar tu día a día.</p>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-top rojo">🖋️</div>
+                <div class="tarjeta-contenido">
+                    <h3><strong>Novela literaria</strong></h3>
+                    <p>Ficción de alta calidad de autores clásicos y contemporáneos destacados.</p>
+                </div>
+            </div>
+        </div>
+        <button class="flecha derecha" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
+    <section class="dec">
+        <h2>
+            <span class="decor">•••</span>
+            <strong>DESCUBRE NUESTRAS EDITORIALES</strong>
+            <span class="decor">•••</span>
+        </h2>
+    </section>
+
+    <div class="slider-editoriales-container">
+        <button class="slider-btn slider-btn-left" onclick="moverSliderEditoriales(-1)">&#10094;</button>
+
+        <div class="slider-editoriales" id="slider-editoriales">
+            <div class="editorial-logo-item"><img src="img/editoriales/E1.png" alt="Editorial 1"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E2.png" alt="Editorial 2"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E3.png" alt="Editorial 3"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E4.png" alt="Editorial 4"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E5.png" alt="Editorial 5"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E6.png" alt="Editorial 6"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E7.png" alt="Editorial 7"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E8.png" alt="Editorial 8"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E9.png" alt="Editorial 9"></div>
+            <div class="editorial-logo-item"><img src="img/editoriales/E10.png" alt="Editorial 10"></div>
+        </div>
+
+        <button class="slider-btn slider-btn-right" onclick="moverSliderEditoriales(1)">&#10095;</button>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<footer>
+    <p> 2025 Librería Online. Todos los derechos reservados.</p>
+</footer>
+</html>

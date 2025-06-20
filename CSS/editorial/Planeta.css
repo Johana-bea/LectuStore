@@ -1,0 +1,83 @@
+ /* body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ } */
+
+ .logo {
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: #0071e3;
+ }
+
+ .nav-links {
+     display: flex;
+     gap: 1rem;
+ }
+
+ .nav-links a {
+     text-decoration: none;
+     color: #333;
+     font-weight: 500;
+ }
+
+ .main {
+     padding: 2rem;
+ }
+
+ .title {
+     font-size: 2rem;
+     font-weight: bold;
+     margin-bottom: 0.5rem;
+ }
+
+ .description {
+     font-size: 1.1rem;
+     color: #555;
+     margin-bottom: 1.5rem;
+ }
+
+ .menus {
+     display: flex;
+     gap: 1.5rem;
+     border-bottom: 2px solid #eee;
+     padding: 1rem 2rem;
+ }
+
+ .menus a {
+     text-decoration: none;
+     font-weight: 500;
+     color: #0071e3;
+ }
+
+/* .banner {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2rem;
+     background: #e7e7e7;
+ }
+
+ .author {
+     width: 30%;
+     text-align: center;
+ }
+
+ .author img {
+     width: 100%;
+     border-radius: 10px;
+ }
+
+ .book {
+     width: 40%;
+     text-align: center;
+ }
+
+ .book img {
+     width: 100px;
+     margin-bottom: 1rem;
+ }
+
+ .book h3 {
+     margin: 0.5rem 0;
+ } */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <form>
+        <label for="">Edad</label>
+        <input type="number" min="18" max="50">
+        <label for="">Celular</label>
+        <input type="tel" pattern="[9][0-9]{8}" required>
+        <button>Enviar</button>
+    </form>
+    <br>
+    <aside class="catalogo">
+        <div>
+            <h1>CELULARES</h1>
+        </div>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, reiciendis corporis fugit culpa nesciunt
+            neque et
+            alias molestias ducimus maiores iure omnis deleniti optio facilis similique, tempora hic qui quaerat.</P>
+        <div class="img"><img src="img/cel.png" alt="" width="200px"></div>
+
+        <h2 class="precio"> S./980.00</h2>
+        <div class="enviar">Comprar</div>
+    </aside>
+    <style>
+        :root {
+            --fondo: rgb(223, 209, 209);
+            --color-principal: rgb(151, 69, 69);
+            --espaciado: 10px;
+            --rojo: red;
+            --verde: green;
+            --azul: blue;
+        }
+
+        div {
+            color: rgb(31, 29, 29);
+        }
+
+        .catalogo {
+            border: solid 2px grey;
+            background: grey;
+            width: 70%;
+            padding: 15px;
+            margin: auto;
+            border-radius: 40px;
+        }
+
+        p,
+        h1,
+        h2,
+        .enviar {
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--rojo);
+        }
+
+        .enviar::before {
+            content: "--";
+        }
+
+        .enviar::after {
+            content: ">>";
+        }
+
+        .precio {
+            color: var(--color-principal);
+        }
+
+        .enviar {
+            background: var(--fondo);
+            color: var(--color-principal);
+            padding: 5px;
+            width: 150px;
+            margin: auto;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .enviar:hover {
+            background: rgb(199, 162, 162);
+            transform: scale(1.2);
+        }
+
+        .precio::before {
+            content: "S/ 1000.00";
+            font-size: small;
+            text-decoration: line-through;
+            padding: 10px;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-.logo {
+.logo1{
     font-size: 1.5rem;
     font-weight: bold;
     color: #0071e3;
@@ -42,7 +42,6 @@
 /* **********************carrusel******************************************* */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 10px;
     background: #fff;
 }
 
@@ -123,11 +122,6 @@ body {
         overflow: visible;
         scroll-snap-type: none;
     }
-
-    .libro {
-        flex: 0 0 calc(25% - 30px);
-        max-width: 200px;
-    }
 }
 
 /* *********************************Premios******************************* */
@@ -189,7 +183,7 @@ body {
 }
 
 @media (min-width: 768px) {
-    .pr {
+    .pr{
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -295,7 +289,12 @@ body {
         text-align: center;
     }
 
-    .logo {
-        margin-top: 20px;
+    .logo1 {
+        margin-top: 70px;
+    }
+
+    .logo1 img {
+        width: 150px; /* Ajusta según lo pequeño que quieras */
+        height: auto;
     }
 }

@@ -1,136 +1,111 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 10px;
-    background: #fff;
+.opiniones-clientes {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
 }
 
-h1 {
-    font-size: 36px;
+.opiniones-clientes .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.opiniones-clientes h2 {
     margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 22px;
+    font-size: 28px;
     color: #333;
-    margin-bottom: 25px;
 }
 
-.carrusel-container {
-    position: relative;
-}
-
-.carrusel {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding: 20px 40px;
-}
-
-.carrusel::-webkit-scrollbar {
-    display: none;
-}
-
-.libro {
-    flex: 0 0 auto;
-    width: 180px;
-    position: relative;
-    border: 1px solid #eee;
-    padding: 10px;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease;
-}
-
-.libro:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.libro img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.libro-info {
-    margin-top: 10px;
-}
-
-.libro-info h4 {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-.libro-info a {
-    color: #007bff;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.libro-info p {
-    font-size: 12px;
+.opiniones-clientes .subtitulo {
+    margin-bottom: 30px;
     color: #666;
-    margin: 5px 0;
 }
 
-.btn-comprar {
+.contenido-opiniones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Opiniones */
+.columna-opiniones {
+    flex: 1;
+    min-width: 300px;
+}
+
+.linea-tiempo .opinion {
+    background-color: #ded7d7;
+    border-left: 4px solid #cc5252;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.icono-usuario {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #f39c12;
+}
+
+.ocultar {
     display: none;
-    margin-top: 8px;
-    width: 100%;
-    background-color: red;
+}
+
+.contenedor-ver-mas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#btnVerMas {
+    padding: 10px 20px;
+    background-color: #f60;
     color: white;
     border: none;
-    font-size: 14px;
-    padding: 8px;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
-.libro:hover .btn-comprar {
-    display: block;
+#btnVerMas:hover {
+    background-color: #d95300;
 }
 
-.flecha {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10;
-    color: #007bff;
+/* Formulario */
+.formulario-opinion {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-opinion h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #222;
+}
+
+.formulario-opinion form input,
+.formulario-opinion form textarea,
+.formulario-opinion form select {
+    width: 100%;
+    margin-bottom: 15px;
     padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.izquierda {
-    left: 0;
+.formulario-opinion form button {
+    background-color: #33cc66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.derecha {
-    right: 0;
-}
-.decor {
-    color: #d2a679;
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
-}
-.dec{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.dec h2{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #5c4033;
-}
-
-
-.dec h5 {
-    font-size: 1.1rem;
-    color: #7b2e1d;
-    margin-bottom: 2rem;
+.formulario-opinion form button:hover {
+    background-color: #28a745;
 }

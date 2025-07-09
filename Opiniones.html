@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/nav_footer.css">
+    <link rel="stylesheet" href="CSS/style_vendidos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="menu-icon" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="LectuStore">
+            </a>
+
+            <div class="center-banner">
+                <a href="promociones.html">
+                    <img src="img/ban2.png" alt="Promoción LectuStore" class="banner-img">
+                </a>
+            </div>
+
+            <div class="contact-info">
+                <div class="call-box">
+                    <span class="call-label">WhatsApp Consultas</span>
+                    <div class="call-number">📱 (+51 951207021)</div>
+                </div>
+                <a href="contactar.html" target="_blank">
+                    <button>Contacto</button>
+                </a>
+
+                <!-- <a class="whats-btn" href="https://wa.me/51951207021" target="_blank">Contacto</a> -->
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu" id="menu">
+            <li>
+                <a href="#">Libros </a>
+                <ul>
+                    <li><a href="Ficcion.html">Ficción</a></li>
+                    <li><a href="Bienestar.html">Bienestar</a></li>
+                    <li><a href="ciencia.html">Ciencia y sociedad</a></li>
+                    <li><a href="juvenil.html">Infantil y juvenil</a></li>
+                </ul>
+            </li>
+            <li><a href="editoriales.html">Editorial</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="Opiniones.html">Opiniones de Clientes</a></li>
+        </ul>
+    </nav>
+    <script>document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+
+    <section class="opiniones-clientes">
+        <div class="contenedor">
+            <h2><span class="icono-comentario">💬</span> Opiniones de Clientes</h2>
+            <p class="subtitulo"><strong><em>Cada día recibimos decenas de felicitaciones de nuestros
+                        clientes.</em></strong></p>
+
+            <div class="contenido-opiniones-formulario">
+                <div class="columna-opiniones">
+                    <div class="linea-tiempo">
+                        <div class="opinion">
+                            <div class="icono-linea"><span class="icono-usuario">👤</span></div>
+                            <div class="caja-opinion">
+                                <p><strong>Gian Vargas, CUSCO, Perú</strong><br>
+                                    <small>Opinión recibida el Martes 08 de Julio</small>
+                                </p>
+                                <p>100% recomendado</p>
+                                <p class="rating">⭐⭐⭐⭐☆ (4.5)</p>
+                            </div>
+                        </div>
+
+                        <div class="opinion">
+                            <div class="icono-linea"><span class="icono-usuario">👤</span></div>
+                            <div class="caja-opinion">
+                                <p><strong>Arianna Belen Marcelo, LIMA, Perú</strong><br>
+                                    <small>Opinión recibida el Martes 08 de Julio</small>
+                                </p>
+                                <p>Llegó mi pedido en buen tiempo :)!!</p>
+                                <p class="rating">⭐⭐⭐⭐☆ (4.5)</p>
+                            </div>
+                        </div>
+
+                        <div class="opinion">
+                            <div class="icono-linea"><span class="icono-usuario">👤</span></div>
+                            <div class="caja-opinion">
+                                <p><strong>Genese Alejo, TRUJILLO, Perú</strong><br>
+                                    <small>Opinión recibida el Martes 08 de Julio</small>
+                                </p>
+                                <p>Muy satisfecho el pedido cumple lo estipulado</p>
+                                <p class="rating">⭐⭐⭐⭐⭐(5)</p>
+                            </div>
+                        </div>
+
+                        <div class="opinion ocultar">
+                            <div class="icono-linea"><span class="icono-usuario">👤</span></div>
+                            <div class="caja-opinion">
+                                <p><strong>Francisco Vela, LIMA, Perú</strong><br>
+                                    <small>Opinión recibida el Martes 07 de Julio</small>
+                                </p>
+                                <p>Buen servicio en la entrega de los libros en perfecto estado, y buena atencion al
+                                    cliente si el libro llega con una falla</p>
+                                <p class="rating">⭐⭐⭐⭐⭐(5)</p>
+                            </div>
+                        </div>
+
+                        <div class="opinion ocultar">
+                            <div class="icono-linea"><span class="icono-usuario">👤</span></div>
+                            <div class="caja-opinion">
+                                <p><strong>Carlos Cruz, CUSCO, Perú</strong><br>
+                                    <small>Opinión recibida el Martes 07 de Julio</small>
+                                </p>
+                                <p>Se desentienden de los productos una vez estén con el courier los productos</p>
+                                <p class="rating">⭐⭐⭐⭐⭐(5)</p>
+                            </div>
+                        </div>
+
+                        <!-- Botón Ver Más -->
+                        <div class="contenedor-ver-mas">
+                            <button id="btnVerMas">Ver más opiniones</button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- Formulario -->
+                <div class="formulario-opinion">
+                    <h3>¿Quieres dejar tu opinión?</h3>
+                    <form id="form-opinion">
+                        <input type="text" name="nombre" placeholder="Tu nombre completo" required />
+                        <input type="text" name="ciudad" placeholder="Ciudad, País" required />
+                        <textarea name="comentario" placeholder="Escribe tu opinión aquí..." rows="4"
+                            required></textarea>
+                        <select name="calificacion" required>
+                            <option value="">Calificación</option>
+                            <option value="5">★★★★★ - Excelente</option>
+                            <option value="4">★★★★ - Muy bueno</option>
+                            <option value="3">★★★ - Bueno</option>
+                            <option value="2">★★ - Regular</option>
+                            <option value="1">★ - Malo</option>
+                        </select>
+                        <button type="submit">Enviar Opinión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("btnVerMas");
+            btn.addEventListener("click", function () {
+                const opinionesOcultas = document.querySelectorAll(".opinion.ocultar");
+                opinionesOcultas.forEach(op => op.style.display = "flex");
+                btn.style.display = "none"; 
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,51 +1,71 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO</title>
-    <link rel="stylesheet" href="CSS/principal/style.css">
-    <link rel="stylesheet" href="CSS/principal/style_novedad.css">
-    <link rel="stylesheet" href="CSS/principal/style_carrusels.css">
-    <script src="JS/scrip.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/nav_footer.css">
+    <link rel="stylesheet" href="CSS/inicio.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
 </head>
 
-<body>
+<body class="body">
     <header>
         <div class="top-bar">
-            <div class="nav-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
-            <a href="index.html"><img class="logo" src="img/logo.png" alt=""></a>
-            <div class="search-container">
-                <form class="search-bar">
-                    <input type="text" placeholder="¿Qué estás buscando?">
-                    <button type="submit"><i class="fas fa-search"></i></button>
-                </form>
+            <div class="menu-icon" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="icons">
-                <span title="Carrito"><i class="fas fa-shopping-cart"></i></span>
+
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="LectuStore">
+            </a>
+
+            <div class="center-banner">
+                <a href="promociones.html">
+                    <img src="img/ban2.png" alt="Promoción LectuStore" class="banner-img">
+                </a>
+            </div>
+
+            <div class="contact-info">
+                <div class="call-box">
+                    <span class="call-label">WhatsApp Consultas</span>
+                    <div class="call-number">📱 (+51 951207021)</div>
+                </div>
+                <a href="contactar.html" target="_blank">
+                    <button>Contacto</button>
+                </a>
+
+                <!-- <a class="whats-btn" href="https://wa.me/51951207021" target="_blank">Contacto</a> -->
             </div>
         </div>
     </header>
+
     <nav>
         <ul class="nav-menu" id="menu">
             <li>
-                <a href="index.html">Libros</a>
+                <a href="#">Libros </a>
                 <ul>
-                    <li><a href="#">Ficción</a></li>
-                    <li><a href="#">Bienestar</a></li>
-                    <li><a href="#">Ciencia y sociedad</a>
-                    <li><a href="#">Infatil y juvenil</a></li>
+                    <li><a href="Ficcion.html">Ficción</a></li>
+                    <li><a href="Bienestar.html">Bienestar</a></li>
+                    <li><a href="ciencia.html">Ciencia y sociedad</a></li>
+                    <li><a href="juvenil.html">Infantil y juvenil</a></li>
                 </ul>
             </li>
-            <li><a href="#">Más Vendidos</a></li>
-            <li><a href="Editorial.html">Editorial</a></li>
+            <li><a href="editoriales.html">Editorial</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="Opiniones.html">Opiniones de Clientes</a></li>
+
         </ul>
     </nav>
+
+    <script>document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -111,113 +131,105 @@
             <button type="button" class="ver-mas"><strong>Ver más</strong></button>
         </a>
     </section>
-    <section class="dec">
-        <h2>
-            <span class="decor">•••</span>
-            <strong>TEMÁTICAS DESTACADAS</strong>
-            <span class="decor">•••</span>
-        </h2>
-    </section>
+    <section class="tem">
+        <div class="dec">
+            <h2>
+                <strong>TEMÁTICAS DESTACADAS</strong>
+            </h2>
+        </div>
 
-    <div class="carrusel-container">
-        <button class="flecha izquierda" onclick="moverCarrusel(-1)">&#10094;</button>
-
-        <div class="carrusel" id="carrusel">
-            <div class="tarjeta">
-                <div class="tarjeta-top azul">🏛️</div>
-                <div class="tarjeta-contenido">
+        <div class="timeline-carrusel">
+            <div class="timeline-item">
+                <div class="icon azul">🏛️</div>
+                <div class="tarjeta-hover">
                     <h3><strong>Historia</strong></h3>
-                    <p>Desde Mesopotamia hasta el siglo XXI. Comprende el pasado para entender el presente.</p>
+                    <p><a href="#">Desde Mesopotamia hasta el siglo XXI. Comprende el pasado para entender el presente.</a></p>
                 </div>
             </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-top naranja">🧸</div>
-                <div class="tarjeta-contenido">
+            <div class="timeline-item">
+                <div class="icon naranja">🧸</div>
+                <div class="tarjeta-hover">
                     <h3><strong>Infantil</strong></h3>
                     <p>Los mejores libros para niños. Aprende y diviértete con Teo, Pocoyó, Frozen, etc.</p>
                 </div>
             </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-top azul">🔬</div>
-                <div class="tarjeta-contenido">
+            <div class="timeline-item">
+                <div class="icon azul">🔬</div>
+                <div class="tarjeta-hover">
                     <h3><strong>Ciencia</strong></h3>
                     <p>¿Qué leyes rigen el universo? Aprende sobre física, biología, cerebro y más.</p>
                 </div>
             </div>
 
-
-            <div class="tarjeta">
-                <div class="tarjeta-top verde">🍴</div>
-                <div class="tarjeta-contenido">
+            <div class="timeline-item">
+                <div class="icon verde">🍴</div>
+                <div class="tarjeta-hover">
                     <h3><strong>Cocina</strong></h3>
                     <p>Descubre los mejores libros para cocinar y sacar al chef que llevas dentro.</p>
                 </div>
             </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-top rojo">🕵️</div>
-                <div class="tarjeta-contenido">
+            <div class="timeline-item">
+                <div class="icon rojo">🕵️</div>
+                <div class="tarjeta-hover">
                     <h3><strong> Novela negra</strong></h3>
                     <p>Sumérgete en clásicos y thrillers modernos. ¡Conviértete en detective por un rato!</p>
                 </div>
             </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-top naranja">🐉</div>
-                <div class="tarjeta-contenido">
+            <div class="timeline-item">
+                <div class="icon naranja">🐉</div>
+                <div class="tarjeta-hover">
                     <h3><strong>Juvenil</strong></h3>
                     <p>Fantasía, misterio y romance. Una gran variedad para jóvenes lectores.</p>
                 </div>
             </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-top rojo">❤️</div>
-                <div class="tarjeta-contenido">
-                    <h3> <Strong>Novela romántica</Strong> </h3>
+            <div class="timeline-item">
+                <div class="icon rojo">❤️</div>
+                <div class="tarjeta-hover">
+                    <h3><strong>Novela romántica</strong></h3>
                     <p>Descubre las historias de amor más apasionantes y conmovedoras.</p>
                 </div>
             </div>
-            <div class="tarjeta">
-                <div class="tarjeta-top azul">📰</div>
-                <div class="tarjeta-contenido">
+
+            <div class="timeline-item">
+                <div class="icon azul">📰</div>
+                <div class="tarjeta-hover">
                     <h3><strong>Actualidad</strong></h3>
                     <p>Todo lo que pasa a tu alrededor: política, sociedad, cultura y actualidad global.</p>
                 </div>
             </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-top verde">💬</div>
-                <div class="tarjeta-contenido">
-                    <h3><strong>Autoayuda</strong> </h3>
+            <div class="timeline-item">
+                <div class="icon verde">💬</div>
+                <div class="tarjeta-hover">
+                    <h3><strong>Autoayuda</strong></h3>
                     <p>Reflexiones, consejos y crecimiento personal para mejorar tu día a día.</p>
                 </div>
             </div>
 
-            <div class="tarjeta">
-                <div class="tarjeta-top rojo">🖋️</div>
-                <div class="tarjeta-contenido">
+            <div class="timeline-item">
+                <div class="icon rojo">🖋️</div>
+                <div class="tarjeta-hover">
                     <h3><strong>Novela literaria</strong></h3>
                     <p>Ficción de alta calidad de autores clásicos y contemporáneos destacados.</p>
                 </div>
             </div>
+
         </div>
-        <button class="flecha derecha" onclick="moverCarrusel(1)">&#10095;</button>
-    </div>
-    <section class="dec">
-        <h2>
-            <span class="decor">•••</span>
-            <strong>DESCUBRE NUESTRAS EDITORIALES</strong>
-            <span class="decor">•••</span>
-        </h2>
     </section>
 
+    <section class="dec">
+        <h2>
+            <strong>DESCUBRE NUESTRAS EDITORIALES</strong>
+        </h2>
+    </section>
     <div class="slider-editoriales-container">
-        <button class="slider-btn slider-btn-left" onclick="moverSliderEditoriales(-1)">&#10094;</button>
-
         <div class="slider-editoriales" id="slider-editoriales">
-            <div class="editorial-logo-item"><img src="img/editoriales/E1.png" alt="Editorial 1"></div>
+            <div class="editorial-logo-item"><a href="Planeta.html"><img src="img/editoriales/E1.png" alt="Editorial 1"></a></div>
             <div class="editorial-logo-item"><img src="img/editoriales/E2.png" alt="Editorial 2"></div>
             <div class="editorial-logo-item"><img src="img/editoriales/E3.png" alt="Editorial 3"></div>
             <div class="editorial-logo-item"><img src="img/editoriales/E4.png" alt="Editorial 4"></div>
@@ -228,13 +240,84 @@
             <div class="editorial-logo-item"><img src="img/editoriales/E9.png" alt="Editorial 9"></div>
             <div class="editorial-logo-item"><img src="img/editoriales/E10.png" alt="Editorial 10"></div>
         </div>
-
-        <button class="slider-btn slider-btn-right" onclick="moverSliderEditoriales(1)">&#10095;</button>
     </div>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 
+    <section class="por-que-elegirnos">
+        <div class="dec">
+            <h2>
+                <strong>¿POR QUE ELEGIR LECTUSTORE?</strong>
+            </h2>
+        </div>
+        <div class="razones-grid">
+            <div class="razon-item">
+                <img src="img/icon/estante.png" alt="Gran variedad">
+                <h4>Gran variedad</h4>
+                <p>Desde novelas hasta libros técnicos y colecciones juveniles.</p>
+            </div>
+            <div class="razon-item">
+                <img src="img/icon/reloj.png" alt="Envíos rápidos">
+                <h4>Envíos rápidos</h4>
+                <p>Procesamos tu pedido el mismo día. Recíbelo en tiempo récord.</p>
+            </div>
+            <div class="razon-item">
+                <img src="img/icon/estrella.png" alt="Contenido exclusivo">
+                <h4>Contenido exclusivo</h4>
+                <p>Ofrecemos productos y colecciones que no encontrarás en librerías comunes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="beneficios-franja">
+        <div class="beneficio-item">
+            <img src="img/icon/camion.png" alt="Envío Gratis">
+            <p><strong>Envío gratis</strong><br>En compras desde S/ 99</p>
+        </div>
+        <div class="beneficio-item">
+            <img src="img/icon/tarjetas.png" alt="Pago Seguro">
+            <p><strong>Pago 100% seguro</strong><br>Con tarjetas y Yape</p>
+        </div>
+        <div class="beneficio-item">
+            <img src="img/icon/audifo.webp" alt="Atención Personalizada">
+            <p><strong>Atención personalizada</strong><br>Vía WhatsApp o correo</p>
+        </div>
+    </section>
 </body>
-<footer>
-    <p> 2025 Librería Online. Todos los derechos reservados.</p>
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <div class="footer-col">
+            <img src="img/logo.png" alt="Logo LectuStore" class="footer-logo-img">
+            <p class="par">
+                LectuStore nació en 2020 como un pequeño emprendimiento de amantes de los libros. Hoy, es una comunidad
+                lectora en expansión, ofreciendo una experiencia literaria completa con novelas, colecciones juveniles y
+                productos exclusivos para lectores.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-titulo">Enlaces</h4>
+            <ul class="footer-enlaces">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-titulo">Contáctanos</h4>
+            <p>
+                Av. Javier Prado Este, Lima, Perú<br>
+                +51 951 207 021<br>
+                contacto@lectustore.com
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-linea">
+        2025 LectuStore. Todos los derechos reservados.
+    </div>
 </footer>
+
 </html>

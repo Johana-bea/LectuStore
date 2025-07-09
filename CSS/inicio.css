@@ -1,0 +1,349 @@
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eae1e8;
+}
+
+/* ************************NOVEDAD*********************************** */
+.decor {
+    color: #d279ae;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.dec {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dec h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5c334e;
+}
+
+
+.dec h5 {
+    font-size: 1.1rem;
+    color: #7b1d43;
+    margin-bottom: 2rem;
+}
+
+.nov {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.novedad {
+    text-align: center;
+    text-decoration: none;
+    color: #721645;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+}
+
+.nov-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.novedad img {
+    width: 180px;
+    height: 280px;
+    border-radius: 5%;
+    object-fit: cover;
+    border: 3px solid #d27988;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.novedad p {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #46142b;
+}
+
+.novedad:hover {
+    transform: scale(1.05);
+}
+
+.nov h3 {
+    color: #7b1d36;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #d27980;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.ver-mas {
+    margin-top: 2rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #4b0b41;
+    color: #fff8f0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ver-mas:hover {
+    background-color: #fff8f0;
+    color: #4b0b41;
+    border: 1px solid #4b0b41;
+}
+
+@media (max-width: 768px) {
+    .nov {
+        padding: 2rem 1rem;
+    }
+
+    .nov h2 {
+        font-size: 1.5rem;
+    }
+
+    .nov h3 {
+        font-size: 1.8rem;
+    }
+
+    .nov h5 {
+        font-size: 1rem;
+    }
+
+    .novedad img {
+        width: 150px;
+        height: 230px;
+    }
+
+    .ver-mas {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nov h2 {
+        font-size: 1.3rem;
+    }
+
+    .novedad img {
+        width: 130px;
+        height: 200px;
+    }
+
+    .novedad p {
+        font-size: 0.95rem;
+    }
+}
+
+/* **************************EDITORIAL******************************* */
+.tem {
+    background-color: #f8f4f2;
+    padding-top: 1px;
+}
+
+.dec {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dec h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0e3961;
+}
+
+.slider-editoriales-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.slider-editoriales {
+    display: flex;
+    gap: 40px;
+    animation: mover-slider 30s linear infinite;
+}
+
+.editorial-logo-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editorial-logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.editorial-logo-item img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes mover-slider {
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Separación visual entre secciones */
+.timeline-carrusel {
+    margin-bottom: 60px;
+}
+
+.slider-editoriales-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
+    /* o un color que contraste */
+    border-top: 2px solid #ccc;
+    /* línea divisoria opcional */
+}
+
+/* **********************TEMATICAS**************************** */
+.timeline-carrusel {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    padding: 90px;
+    overflow-x: auto;
+}
+
+.timeline-carrusel::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #ccc;
+    z-index: 0;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon {
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-item:hover .icon {
+    transform: scale(1.2);
+}
+
+.tarjeta-hover {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    padding: 9px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 2;
+}
+.tarjeta-hover a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.timeline-item:hover .tarjeta-hover {
+    display: block;
+}
+
+.azul {
+    background-color: #e4a162;
+}
+
+.naranja {
+    background-color: #cf98cb;
+}
+
+.verde {
+    background-color: #6abcae;
+}
+
+.rojo {
+    background-color: #ef8175;
+}
+
+/* ************************PORQUE*********************** */
+.por-que-elegirnos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.por-que-elegirnos h2 {
+    margin-bottom: 30px;
+}
+
+.razones-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.razon-item {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.razon-item img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* ********************************BENEFICIOS********************************** */
+.beneficios-franja {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f4f2;
+    padding: 20px 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.beneficio-item {
+    flex: 1;
+    max-width: 250px;
+    min-width: 180px;
+}
+
+.beneficio-item img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}

@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Contáctanos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros | LectuStore</title>
-    <link rel="stylesheet" href="CSS/nosotros.css">
+    <link rel="stylesheet" href="CSS/contacto.css">
     <link rel="stylesheet" href="CSS/nav_footer.css">
-    <script src="JS/scrip.js"></script>
 </head>
 
 <body>
@@ -42,10 +41,11 @@
             </div>
         </div>
     </header>
+
     <nav>
         <ul class="nav-menu" id="menu">
             <li>
-                <a href="#">Libros </a>
+                <a href="index.html">Libros </a>
                 <ul>
                     <li><a href="Ficcion.html">Ficción</a></li>
                     <li><a href="Bienestar.html">Bienestar</a></li>
@@ -58,80 +58,65 @@
             <li><a href="Opiniones.html">Opiniones de Clientes</a></li>
         </ul>
     </nav>
+
+    <img class="nos" src="img/contac.png" alt="Banner">
+
+    <div class="container">
+
+        <!-- Columna izquierda: Datos de contacto -->
+        <div class="card">
+            <h2>Datos de Contacto</h2>
+            <div class="info-item">📱 +51 951207021</div>
+            <div class="info-item">📧 contacto@lectustore.com</div>
+            <div class="info-item">📍 Av. Javier Prado Este, Lima, Perú</div>
+            <div class="info-item">🕒 Lunes a Sábado de 10am a 7:30pm. Domingo de 11am a 6pm</div>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.847110128456!2d-77.03024732420644!3d-12.125332142390865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81c088fdc5f%3A0x97a3a26108e0a7f6!2sC.%20Alcanfores%20199%2C%20Miraflores%2015047!5e0!3m2!1ses!2spe!4v1688867905485!5m2!1ses!2spe"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Columna derecha: Formulario -->
+        <div class="card formulario">
+            <h2>Escríbenos usando el siguiente formulario</h2>
+
+            <label for="nombre">Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido *</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono">
+
+            <label for="tema">Mi consulta es sobre: *</label>
+            <select id="tema" name="tema" required>
+                <option value="">Selecciona una opción</option>
+                <option value="compras">Compras</option>
+                <option value="envíos">Envíos</option>
+                <option value="otros">Otros</option>
+            </select>
+
+            <label for="mensaje">Consulta *</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </div>
+
+    </div>
     <script>document.getElementById('menu-toggle').addEventListener('click', function () {
             document.getElementById('menu').classList.toggle('active');
         });
     </script>
-    <section class="nosotros">
-        <div class="encabezado">
-            <h1>Sobre LectuStore</h1>
-            <p>Tu espacio literario favorito desde 2020</p>
-        </div>
-
-        <div class="historia">
-            <h2>¿Quiénes somos?</h2>
-            <p>
-                LectuStore nació en 2020 como un pequeño emprendimiento virtual creado por amantes de los libros. Con el
-                paso del tiempo, se convirtió en una tienda en línea dedicada a brindar una experiencia literaria
-                completa, desde novelas contemporáneas hasta colecciones juveniles y productos exclusivos para lectores
-            </p>
-            <p>
-                Nuestra meta es que cada lector encuentre en LectuStore un espacio donde su pasión por la lectura
-                crezca. No somos solo una librería, somos una comunidad lectora en expansión.
-            </p>
-        </div>
-    </section>
-
-    <div class="seccion">
-        <div class="imagen">
-            <img src="img/mision.jpg" alt="Imagen Misión">
-        </div>
-        <div class="texto">
-            <h2>Misión</h2>
-            <p>Hacer de la lectura una experiencia accesible, divertida y enriquecedora para todos, impulsando el
-                amor por los libros en cada rincón del país.
-            </p>
-        </div>
-    </div>
-
-    <div class="seccion">
-        <div class="texto">
-            <h2>Visión</h2>
-            <p>
-                Convertirnos en la librería digital líder en el mundo hispanohablante, destacando por nuestro
-                servicio, diversidad literaria y pasión lectora
-            </p>
-        </div>
-        <div class="imagen">
-            <img src="img/vision.jpg" alt="Imagen Visión">
-        </div>
-    </div>
-    <section class="valores">
-        <h2>Nuestros Valores</h2>
-        <div class="val">
-            <div class="valor">
-                <h3>Pasión por la lectura</h3>
-                <p>Creamos un espacio para lectores apasionados, donde cada historia importa.</p>
-            </div>
-            <div class="valor">
-                <h3>Accesibilidad</h3>
-                <p>Ofrecemos libros y experiencias al alcance de todos, sin importar su ubicación o presupuesto.</p>
-            </div>
-            <div class="valor">
-                <h3>Innovación</h3>
-                <p>Integramos tecnología y creatividad para mejorar la experiencia lectora.</p>
-            </div>
-            <div class="valor">
-                <h3>Compromiso cultural</h3>
-                <p>Promovemos la literatura nacional e internacional como puente de conocimiento y diversidad.</p>
-            </div>
-        </div>
-    </section>
-
 </body>
 <footer class="footer">
     <div class="footer-contenido">
 
+        <!-- Logo e historia -->
         <div class="footer-col">
             <img src="img/logo.png" alt="Logo LectuStore" class="footer-logo-img">
             <p class="par">
@@ -141,6 +126,7 @@
             </p>
         </div>
 
+        <!-- Enlaces -->
         <div class="footer-col">
             <h4 class="footer-titulo">Enlaces</h4>
             <ul class="footer-enlaces">
@@ -151,6 +137,7 @@
             </ul>
         </div>
 
+        <!-- Contacto -->
         <div class="footer-col">
             <h4 class="footer-titulo">Contáctanos</h4>
             <p>
@@ -161,9 +148,11 @@
         </div>
     </div>
 
+    <!-- Línea inferior -->
     <div class="footer-linea">
         2025 LectuStore. Todos los derechos reservados.
     </div>
 </footer>
+
 
 </html>

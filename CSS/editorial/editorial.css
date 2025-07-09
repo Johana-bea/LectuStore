@@ -1,4 +1,4 @@
-.dec {
+/* .dec {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     margin-top: 50px;
@@ -98,6 +98,116 @@
 
     .novedad p {
         font-size: 0.9rem;
+    }
+
+    .nov-grid {
+        gap: 1.5rem;
+    }
+} */
+
+/* ---------- Sección Título ---------- */
+.dec {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.dec h3 {
+    color: #0e3961;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.dec h5 {
+    margin: 0 auto;
+    max-width: 900px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+}
+
+/* ----------Editoriales ---------- */
+.nov {
+    padding: 3rem 2rem;
+    background-color: #fafafa;
+}
+
+.nov-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+/* ---------- Tarjetas de Editorial ---------- */
+.novedad {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
+}
+
+.novedad:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Imagenes ---------- */
+.novedad img {
+    width: 160px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ---------- Nombre de la editorial ---------- */
+.novedad p {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #0e3961;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .dec h5 {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .nov-grid {
+        gap: 2rem;
+    }
+
+    .novedad {
+        width: 45%;
+    }
+
+    .novedad img {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .novedad {
+        width: 100%;
+    }
+
+    .novedad img {
+        width: 100px;
+        height: 70px;
+    }
+
+    .novedad p {
+        font-size: 1rem;
     }
 
     .nov-grid {

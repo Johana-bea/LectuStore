@@ -53,13 +53,19 @@ body {
     border-radius: 4px;
     cursor: pointer;
     margin-right: 2px;
+    margin-bottom: 5px;
 }
 .btn-detalle a{
     text-decoration: none;
+    color: white;
 }
 
 .btn-detalle:hover {
     border: 1px solid #ff3c1f;
+    color: #ff3c1f;
+    background: rgb(255, 255, 255);
+}
+.btn-detalle a:hover {
     color: #ff3c1f;
     background: rgb(255, 255, 255);
 }
@@ -198,5 +204,6 @@ body {
     .btn-detalle {
         font-size: 11px;
         padding: 4px 8px;
+        margin-bottom: 5px;
     }
 }

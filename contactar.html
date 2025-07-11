@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/contacto.css">
     <link rel="stylesheet" href="CSS/nav_footer.css">
     <script src="JS/alert.js"></script>
+    <script src="JS/scrip.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
             </a>
 
             <div class="center-banner">
-                <a href="promociones.html">
+                <a href="#.html">
                     <img src="img/ban2.png" alt="Promoción LectuStore" class="banner-img">
                 </a>
             </div>
@@ -75,8 +76,7 @@
             </iframe>
         </div>
 
-        <!-- Columna derecha: Formulario -->
-        <div class="card formulario">
+        <form class="card formulario" id="formulario" onsubmit="return validarFormulario()">
             <h2>Escríbenos usando el siguiente formulario</h2>
 
             <label for="nombre">Nombre *</label>
@@ -87,9 +87,11 @@
 
             <label for="email">Email *</label>
             <input type="email" id="email" name="email" required>
+            <p id="mensajeEmail"></p>
 
-            <label for="telefono">Teléfono</label>
-            <input type="text" id="telefono" name="telefono">
+            <label for="telefono">Teléfono *</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <p id="mensajeTelefono"></p>
 
             <label for="tema">Mi consulta es sobre: *</label>
             <select id="tema" name="tema" required>
@@ -103,7 +105,8 @@
             <textarea id="mensaje" name="mensaje" required></textarea>
 
             <button type="submit">Enviar</button>
-        </div>
+        </form>
+
 
     </div>
     <script>document.getElementById('menu-toggle').addEventListener('click', function () {

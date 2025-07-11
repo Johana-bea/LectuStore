@@ -16,7 +16,6 @@ header {
     flex-wrap: wrap;
 }
 
-/* Ícono hamburguesa */
 .menu-icon {
     display: none;
     flex-direction: column;
@@ -55,7 +54,6 @@ header {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Información de contacto */
 .contact-info {
     display: flex;
     align-items: center;
@@ -87,7 +85,6 @@ header {
     background-color: #5ac983;
 }
 
-/* MENÚ DE NAVEGACIÓN */
 nav {
     background-color: #400020;
     width: 100%;
@@ -191,43 +188,6 @@ nav {
         position: static;
     }
 
-
-    /* .menu-icon {
-        display: flex;
-    }
-
-    .top-bar {
-        align-items: center;
-        text-align: center;
-    }
-
-    .contact-info {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin-top: 10px;
-        gap: 8px;
-    }
-
-    .center-banner {
-        display: none;
-    }
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        background-color: #3b001e;
-        padding: 10px;
-    }
-
-    .nav-menu.active {
-        display: flex;
-    }
-
-    .nav-menu li {
-        margin: 10px 0;
-    } */
 }
 
 @media (max-width: 560px) {

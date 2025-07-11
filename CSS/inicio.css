@@ -201,7 +201,6 @@
     }
 }
 
-/* Separación visual entre secciones */
 .timeline-carrusel {
     margin-bottom: 60px;
 }
@@ -210,10 +209,58 @@
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #ffffff;
-    /* o un color que contraste */
     border-top: 2px solid #ccc;
-    /* línea divisoria opcional */
 }
+
+/* Estilo general del slider */
+.slider-editoriales-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-top: 2px solid #ccc;
+}
+
+.slider-editoriales {
+    display: flex;
+    gap: 40px;
+    animation: mover-slider 30s linear infinite;
+    will-change: transform;
+}
+
+.editorial-logo-item {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editorial-logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .slider-editoriales {
+        animation: none;
+        overflow-x: auto;
+        padding: 0 10px;
+    }
+
+    .editorial-logo-item {
+        flex: 0 0 auto;
+        width: 130px;
+        height: 70px;
+    }
+}
+
 
 /* **********************TEMATICAS**************************** */
 .timeline-carrusel {
@@ -270,7 +317,8 @@
     text-align: center;
     z-index: 2;
 }
-.tarjeta-hover a{
+
+.tarjeta-hover a {
     text-decoration: none;
     color: #000000;
 }
@@ -294,6 +342,55 @@
 .rojo {
     background-color: #ef8175;
 }
+
+.tarjeta-hover {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    padding: 9px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 2;
+}
+
+.timeline-item:hover .tarjeta-hover {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .timeline-carrusel {
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px 20px;
+    }
+
+    .timeline-carrusel::before {
+        display: none;
+    }
+
+    .timeline-item {
+        position: relative;
+        align-items: center;
+    }
+
+    .tarjeta-hover {
+        display: block;
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 10px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+}
+
 
 /* ************************PORQUE*********************** */
 .por-que-elegirnos {

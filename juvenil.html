@@ -1,11 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/nav_footer.css">
+    <link rel="stylesheet" href="CSS/ficcion.css">
+    <script src="JS/scrip.js"></script>
 </head>
+
 <body>
-    <h1>juvenil</h1>
+    <header>
+        <div class="top-bar">
+            <div class="menu-icon" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <a href="index.html">
+                <img class="logo" src="img/logo.png" alt="LectuStore">
+            </a>
+
+            <div class="center-banner">
+                <a href="promociones.html">
+                    <img src="img/ban2.png" alt="Promoción LectuStore" class="banner-img">
+                </a>
+            </div>
+
+            <div class="contact-info">
+                <div class="call-box">
+                    <span class="call-label">WhatsApp Consultas</span>
+                    <div class="call-number">📱 (+51 951207021)</div>
+                </div>
+                <a href="contactar.html" target="_blank">
+                    <button class="whats-btn">Contacto</button>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-menu" id="menu">
+            <li>
+                <a href="#">Libros </a>
+                <ul>
+                    <li><a href="Ficcion.html">Ficción</a></li>
+                    <li><a href="Bienestar.html">Bienestar</a></li>
+                    <li><a href="juvenil.html">Infantil y juvenil</a></li>
+                </ul>
+            </li>
+            <li><a href="editoriales.html">Editorial</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="Opiniones.html">Opiniones de Clientes</a></li>
+
+        </ul>
+    </nav>
+
+    <script>document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('active');
+        });
+    </script>
+
+    <section id="novela_negra">
+        <section id="novela_negra">
+            <div class="titulo-seccion">
+                <h2><span>🐉 Infantil y Juvenil</span></h2>
+                <div class="linea"></div>
+            </div>
+            <p class="descripcion-seccion">
+                ¿Te gusta el misterio, la fantasía y el romance? Aquí encontrarás una amplia variedad de libros para
+                adolescentes que harán volar tu imaginación, además de libros juveniles de no ficción para estar al
+                tanto de los temas más actuales.
+            </p>
+
+            <section class="libros">
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju1.png" alt="Boss">
+                    </div>
+
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Fair Catch</h3>
+                        <p class="autor">Kandi Steiner</p>
+                        <div class="rating">⭐⭐⭐⭐☆ <span class="cantidad">(68)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 120,58</span>
+                            <span class="precio-oferta">S/ 74.08</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju2.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">El fin justifica todo</h3>
+                        <p class="autor">Alejandro G. Roemmers</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span class="cantidad">(54)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 89,90</span>
+                            <span class="precio-oferta">S/ 44,95</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju3.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Dioses ardientes</h3>
+                        <p class="autor">Jorge Díaz</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span class="cantidad">(38)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 76,50</span>
+                            <span class="precio-oferta">S/ 38,25</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju4.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Nuevos comienzos</h3>
+                        <p class="autor">Alaitz Leceaga</p>
+                        <div class="rating">⭐⭐⭐☆☆ <span class="cantidad">(27)</span></div>
+                        <p class="detalle">Novela Negra</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 69,00</span>
+                            <span class="precio-oferta">S/ 34,50</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="libros">
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju5.png" alt="Boss">
+                    </div>
+
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Besar a un elfo</h3>
+                        <p class="autor">Tamara Molina</p>
+                        <div class="rating">⭐⭐⭐☆☆ <span class="cantidad">(68)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 80,58</span>
+                            <span class="precio-oferta">S/ 53.08</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju6.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">El lamento de Sally. Un giro inesperado</h3>
+                        <p class="autor">Jenny Han</p>
+                        <div class="rating">⭐⭐⭐⭐☆ <span class="cantidad">(65)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-oferta">S/ 44</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju7.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Todos los arcoíris a tu lado</h3>
+                        <p class="autor">Pierre Martin</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span class="cantidad">(38)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 80,58</span>
+                            <span class="precio-oferta">S/ 57,50</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju8.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Milagro en Rovaniemi</h3>
+                        <p class="autor">Susana López Rubio</p>
+                        <p class="autor">Javier Holgado</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span class="cantidad">(27)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 80,00</span>
+                            <span class="precio-oferta">S/ 69,00</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="libros">
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju9.png" alt="Las manzanas">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Aquello que dejamos atras</h3>
+                        <p class="autor">Agatha Christie</p>
+                        <div class="rating">⭐⭐⭐⭐☆ <span class="cantidad">(81)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 98,20</span>
+                            <span class="precio-oferta">S/ 56,36</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju10.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Manual de Tacticas amorosas para grinches y elfos</h3>
+                        <p class="autor">Sophie Stava</p>
+                        <div class="rating">⭐⭐⭐⭐☆ <span class="cantidad">(54)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 89,90</span>
+                            <span class="precio-oferta">S/ 44,95</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju11.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Mil recuerdos tuyos</h3>
+                        <p class="autor">Toni Sanchez Bernal</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span class="cantidad">(38)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-oferta">S/ 56,25</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="libro-horizontal">
+                    <div class="img-container">
+                        <img src="img/Libros/ju12.png" alt="Stradivarius">
+                    </div>
+                    <div class="info-libro">
+                        <h3 class="titulo-libro">Dioses ardientes</h3>
+                        <p class="autor">Angélica Morales</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ <span class="cantidad">(27)</span></div>
+                        <p class="detalle">JUVENIL</p>
+                        <div class="precio-descuento">
+                            <span class="precio-original">S/ 69,00</span>
+                            <span class="precio-oferta">S/ 44,50</span>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-detalle">Ver detalle</button>
+                            <button class="btn-detalle"> <a href="https://wa.me/+51951207021?text=Hola quiero comprar éste producto!">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </section>
+    </section>
+
+
 </body>
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <div class="footer-col">
+            <img src="img/logo.png" alt="Logo LectuStore" class="footer-logo-img">
+            <p class="par">
+                LectuStore nació en 2020 como un pequeño emprendimiento de amantes de los libros. Hoy, es una comunidad
+                lectora en expansión, ofreciendo una experiencia literaria completa con novelas, colecciones juveniles y
+                productos exclusivos para lectores.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-titulo">Enlaces</h4>
+            <ul class="footer-enlaces">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Opiniones.html">Opiniones</a></li>
+                <li><a href="contactar.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-titulo">Contáctanos</h4>
+            <p>
+                Av. Javier Prado Este, Lima, Perú<br>
+                +51 951 207 021<br>
+                contacto@lectustore.com
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-linea">
+        2025 LectuStore. Todos los derechos reservados.
+    </div>
+</footer>
+
 </html>
